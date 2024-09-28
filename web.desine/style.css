@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(img5.jpg);
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+}
+
+#myH2{
+    position: absolute;
+    color: #fff;
+    margin: auto;
+    left: 20px;
+    top: 16px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(0, 162, 227);
+
+}
+
+ul{
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+li a{
+    text-decoration: none;
+    color: skyblue;
+    padding: 20px ;
+    position: relative;
+    top: 21px;
+    left: 20px;
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+
+a:before{
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: skyblue;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 1s;
+
+    
+    
+}  
+
+ ul li a:hover:before,
+ ul li a:hover:after{
+    transform: scaleX(1);
+    
+}
+
+li a:hover{
+    color: rgb(10, 150, 205);
+}
+
+
+a:after{
+    content: "";
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: skyblue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 1s;
+}
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 399px;
+    width: 100;
+    position: absolute;
+    top: 130px;
+    left: 870px;
+    padding: 20px 40px;
+    background: linear-gradient(to top, rgb(145, 224, 255, 0.2)20%, rgb(145, 224, 255, 0.1)100%);
+    border-radius: 21px;
+}
+
+.input-box input{
+
+    width: 100%;
+    height: 47px;
+    border: 2px solid, skyblue;
+    border-radius: 12px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+
+
+}
+
+input{ 
+    outline: none;
+}
+
+
+ .fa-user{
+    position: relative;
+    bottom: 33px;
+    left: 233px;
+    color: #fff;
+
+ }
+
+ .fa-eye{
+    position: relative;
+    bottom: 33px;
+    left: 230px;
+    color: #fff;
+ }
+ 
+#eyeicon{
+    position: relative;
+    bottom: 33px;
+    left: 230px;
+    color: #fff;
+}
+
+p{
+    position: relative;
+    top: 99px;
+    left: 14px;
+    color: #fff;
+    font-size: 17px;
+    font-family: Arial;
+    
+
+    
+}
+
+p a{
+    position: relative;
+    left: 10px;
+    color: rgb(0, 159, 222);
+    transition: 0.4s ease;
+
+}
+
+button{
+    position: relative;
+    top: 0;
+    left: 3.5px;
+    padding: 10px 100px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+    
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    
+    
+}
+
+button:hover{
+    background-color: rgb(61, 187, 236);
+}
+
+p a:hover{
+    color: rgb(0, 159, 222);
+    text-decoration: underline;
+
+}
+
+.serach{
+    align-items: center;
+    position: absolute;
+    left: 850px;
+    bottom: 570px;
+    display: flex;
+}
+
+#myserach{
+    position: relative;
+    top: 36px;
+    left: 295px;
+    color: black;
+    background-color: skyblue;
+    display: flex; 
+    font-size: 20px; 
+    padding: 8px 19px;
+    z-index: 10;
+    border-radius: 1px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+.input-search{
+    position: relative;
+    top: 36px;
+    border-right: none;
+    padding: 10.5px 20px;
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(58, 57, 55);
+    border: 2px solid;
+    border-color: rgb(106, 201, 238);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: #fff;
+}
+
+::placeholder{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#myserach:hover{
+    background-color: rgb(26, 172, 230);
+}
+
+
+
